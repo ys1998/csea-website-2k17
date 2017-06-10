@@ -206,19 +206,14 @@
 						<h2 class="major"><span>Feedback</span></h2>
 						<form id="form" method="post" onsubmit="submitFeedback()">
 						<table>
-							<tr><td><input type="text" placeholder="Name" /></td></tr>
-							<tr><td><input type="text" placeholder="E-mail" /></td></tr>
+							<tr><td colspan="2"><input type="text" placeholder="Name" /></td></tr>
+							<tr><td colspan="2"><input type="text" placeholder="E-mail" /></td></tr>
 							<tr><td><textarea placeholder="Feedback" style="resize: none; "></textarea></td>
-							<tr><td style="padding-top: 3px; text-align: right; "><!--<input type="submit" value="Send" />
-									<input type="reset" value="Refresh" /></td>-->
-									<div id="response" style="visibility: hidden; 
-															  position: absolute;
-															  margin: 0px 5px 0px 5px;
-															  display: table-cell;
-															  vertical-align: middle;
-															   ">Hello</div>
-									<a onclick="form.submit()" class="button alt">Send</a>
-									<a onclick="form.reset()" class="button alt">Refresh</a></td>
+								<td style="vertical-align: middle; text-align: right; width: 1%; padding-left: 10px;">
+									
+									<a onclick="form.submit()" class="button alt">Send </a><br />
+									<div style="height: 10px; width: auto;"></div>
+									<a onclick="form.reset()" class="button alt">Reset</a></td>
 							</tr>
 						</table>
 						</form>
