@@ -3,7 +3,13 @@
 <head>
 	<script src="assets/jquery-1.8.3.min.js"></script>
 	<script src="assets/animatescroll.js"></script>
-	<title>CSEA, IIT Bombay</title>
+	<script src="feedback_validation.js"></script>
+	<script>
+	required.add('Name','NOT_EMPTY','name');
+	required.add('Email','EMAIL','email');
+	required.add('Feedback','NOT_EMPTY','feedback');
+	</script>
+	<title>CSEA | IIT Bombay</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -53,7 +59,9 @@
 		<!-- Header -->
 		<header id="header">
 			<div class="logo container">
-				<div><h1>CSEA Council 2017-18</h1></div>
+				<div><p>Meet the backbone of the association</p><br>
+					<h1>CSEA Council 2017-18</h1>
+				</div>
 			</div>
 		</header>
 
@@ -768,11 +776,11 @@
 				<!-- Feedback -->
 				<section>
 					<h2 class="major"><span>Feedback</span></h2>
-					<form id="form" method="post" onsubmit="submitFeedback()">
+					<form id="form" method="post" onsubmit="return validate.check(this)" action="feedback_process.php">
 						<table>
-							<tr><td colspan="2"><input type="text" placeholder="Name" /></td></tr>
-							<tr><td colspan="2"><input type="text" placeholder="E-mail" /></td></tr>
-							<tr><td><textarea placeholder="Feedback" style="resize: none; "></textarea></td>
+							<tr><td colspan="2"><input type="text" placeholder="Name" name="name" id="name" /></td></tr>
+							<tr><td colspan="2"><input type="text" placeholder="E-mail" name="email" id="email" /></td></tr>
+							<tr><td><textarea placeholder="Feedback" name="feedback" id="feedback" style="resize: none; "></textarea></td>
 								<td style="vertical-align: middle; text-align: right; width: 1%; padding-left: 10px;">
 
 									<a onclick="form.submit()" class="button alt">Send </a><br />
