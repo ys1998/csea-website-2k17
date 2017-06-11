@@ -5,9 +5,9 @@
 	<script src="assets/animatescroll.js"></script>
 	<script src="feedback_validation.js"></script>
 	<script>
-	required.add('Name','NOT_EMPTY','name');
-	required.add('Email','EMAIL','email');
-	required.add('Feedback','NOT_EMPTY','feedback');
+		required.add('Name','NOT_EMPTY','name');
+		required.add('Email','EMAIL','email');
+		required.add('Feedback','NOT_EMPTY','feedback');
 	</script>
 	<title>CSEA | IIT Bombay</title>
 	<meta charset="utf-8" />
@@ -776,7 +776,7 @@
 				<!-- Feedback -->
 				<section>
 					<h2 class="major"><span>Feedback</span></h2>
-					<form id="form" method="post" onsubmit="return validate.check(this)" action="feedback_process.php">
+					<form id="form" method="post" action="feedback.php">
 						<table>
 							<tr><td colspan="2"><input type="text" placeholder="Name" name="name" id="name" /></td></tr>
 							<tr><td colspan="2"><input type="text" placeholder="E-mail" name="email" id="email" /></td></tr>
