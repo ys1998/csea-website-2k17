@@ -3,12 +3,6 @@
 <head>
 	<script src="assets/jquery-1.8.3.min.js"></script>
 	<script src="assets/animatescroll.js"></script>
-	<script src="feedback_validation.js"></script>
-	<script>
-		required.add('Name','NOT_EMPTY','name');
-		required.add('Email','EMAIL','email');
-		required.add('Feedback','NOT_EMPTY','feedback');
-	</script>
 	<title>CSEA | IIT Bombay</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -59,8 +53,8 @@
 		<!-- Header -->
 		<header id="header">
 			<div class="logo container">
-				<div><p>Meet the backbone of the association</p><br>
-					<h1>CSEA Council 2017-18</h1>
+				<div>
+					<p>Meet the members of </p><h1>CSEA Council 2017-18</h1>
 				</div>
 			</div>
 		</header>
@@ -71,8 +65,8 @@
 		
 		<!-- Main -->
 		
-		<div id="main-wrapper">
-			<div id="main" class="container">
+		<div id="main-wrapper" style="padding-bottom: 6em;">
+			<div id="main" class="container" style="border: solid 5px #6b7770; width: all; border-radius: 9px; box-shadow: 0em 0em 1em rgba(0,0,0,0.3);">
 				<div style="display: table; margin: 0 auto;"> <!-- For center-aligning the images -->
 
 					<!-- Department General Secretary -->
@@ -776,7 +770,7 @@
 				<!-- Feedback -->
 				<section>
 					<h2 class="major"><span>Feedback</span></h2>
-					<form id="form" method="post" action="feedback.php">
+					<form id="form" method="post" action="">
 						<table>
 							<tr><td colspan="2"><input type="text" placeholder="Name" name="name" id="name" /></td></tr>
 							<tr><td colspan="2"><input type="text" placeholder="E-mail" name="email" id="email" /></td></tr>

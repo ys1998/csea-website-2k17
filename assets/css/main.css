@@ -1,11 +1,8 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Open+Sans+Condensed:700");
 
-/*
-	TXT by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-	*/
+/* Credits: HTML5 UP */
+
 
 	/* Reset */
 
@@ -1285,7 +1282,10 @@
 	input[type="reset"].alt,
 	button.alt,
 	.button.alt {
+		transition: all 0.15s ease-in-out;
 		background: #c1cac5;
+		border: solid 2px #6b7770;
+		color: #6b7770;
 
 	}
 
@@ -1294,7 +1294,10 @@
 	input[type="reset"].alt:hover,
 	button.alt:hover,
 	.button.alt:hover {
+		transition: all 0.15s ease-in-out;
 		background: #ccd5d0;
+		border: solid 2px #ccd5d0;
+		color: #ffffff;
 	}
 
 	input[type="button"].alt:active,
@@ -1951,6 +1954,58 @@
 			padding: 0px 5px 0px 5px;
 		}
 
+
+		/* CSS Code for event container */
+		.event-container {
+			transition: all 0.15s ease-in-out;
+			position: relative;
+			width: 100%;
+			height: 20em;
+			padding: 3em 5em;
+			border-radius: 9px;
+			border: solid 3px #c1cac5;
+			background-color: #ffffff;
+			box-shadow: 0em 0em 2em rgba(0,0,0,0.3);
+			font-family: 'Open Sans', sans-serif;
+			overflow-y: scroll;
+
+		}
+		.event-container:hover {
+			transition: all 0.15s ease-in-out;
+			box-shadow: 0em 0em 4em rgba(0,0,0,0.3);
+			border: solid 5px #74e565;
+		}
+		.event-container table {
+			width: 60%;
+			height: 14em;
+			margin: auto 0;
+		}
+		.event-container table th {
+			text-transform: uppercase;
+			font-family: 'Open Sans Condensed', sans-serif;
+			color: #6b7770;
+			font-weight: bold;
+			text-align: left;
+			font-size: 1.5em;
+		}
+		.event-container .image {
+			position: absolute;
+			top: 3em;
+			right: 5em;
+			border-radius: 9px;
+			width: 30%;
+			height: 14em;
+			overflow: hidden;
+			text-align: right;
+			border: solid 3px #c1cac5;
+		}
+		.event-container .image:hover {
+			border: solid 3px #6b7770;
+		}
+		.event-container .image img {
+			width: auto;
+			height: auto;
+		}
 		
 		/* CSS Code for the image-flipping container */
 		.flip_image_container{
