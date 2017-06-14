@@ -2037,8 +2037,22 @@ table.default thead {
 		transition: all 0.3s ease-in-out;
 		opacity: 1;
 	}
+	.slideshow-container:hover .indicator {
+		transition: all 0.3s ease-in-out;
+		opacity: 1;
+	}
 
 	/* Indicators for slide number */
+	.indicator {
+		transition: all 0.3s ease-in-out;
+		opacity:0;
+		position: absolute; 
+		text-align:center; 
+		bottom: 0; 
+		width: 100%; 
+		padding-bottom: 1em; 
+		vertical-align: middle;
+	}
 	.dot {
 		cursor:pointer;
 		height: 20px;
@@ -2075,6 +2089,60 @@ table.default thead {
 		from {opacity: 0.4}
 		to {opacity: 1}
 	}
+
+	/* CSS code for post-container */
+	.post-container {
+		transition: all 0.15s ease-in-out;
+		position: relative;
+		width: 31%;
+		height: 20em;
+		border-radius: 9px;
+		box-shadow: 0em 0em 1em rgba(0,0,0,0.3);
+		padding: 1em;
+		background-color: #ffffff;
+		display: inline-block;
+		margin: 0% 1% 2% 1%;
+	}
+	.post-container:hover {
+		transition: all 0.15s ease-in-out;
+		border: solid 3px #6b7770;
+		box-shadow: 0em 0em 2em rgba(0,0,0,0.6);
+	}
+	.post-header {
+		font-family: 'Open Sans Condensed',sans-serif;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width:100%;
+		height: 2em;
+		border-bottom: dashed 2px #c1cac5;
+		display: inline;
+	}
+	.post-header .time {
+		position: absolute;
+		height: auto;
+		left:0;
+		text-align: left;
+		padding-left: 1em; 
+	}
+	.post-header .author {
+		position: absolute;
+		right: 0;
+		padding-right: 1em;
+		text-align: right;
+	}
+	.post-body .headline {
+		font-family: 'Open Sans',sans-serif;
+		font-weight: bold;
+		padding: 2em 1em 0em 1em;
+	}
+	.post-body .content {
+		font-family: 'Open Sans',sans-serif;
+		padding: 0em 1em 2em 1em;
+		height: 13em;
+		overflow-y: scroll;
+	}
+
 
 	/* CSS Code for event container */
 	.event-container {
