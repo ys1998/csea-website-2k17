@@ -1996,7 +1996,6 @@ table.default thead {
 	.slide img {
 		height: 28em;
 		width: auto;
-		border-radius: 9px;
 	}
 
 	/* Next & previous buttons */
@@ -2042,8 +2041,8 @@ table.default thead {
 	/* Indicators for slide number */
 	.dot {
 		cursor:pointer;
-		height: 18px;
-		width: 18px;
+		height: 20px;
+		width: 20px;
 		margin: 0 2px;
 		background-color: #6b7770;
 		border-radius: 50%;
@@ -2054,7 +2053,8 @@ table.default thead {
 	.dot-active, .dot:hover {
 		transition: all 0.3s ease;
 		background-color: #74e565;
-		border-radius: 10%;
+		height: 15px;
+		width: 15px;
 		margin-bottom: 3px;
 	}
 
