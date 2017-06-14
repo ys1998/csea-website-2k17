@@ -2143,6 +2143,11 @@ table.default thead {
 		overflow-y: scroll;
 	}
 
+	/* CSS code for expanded gallery */
+	.expgallery ul {
+		list-style: square;
+		list-style-position: inside;
+	}
 
 	/* CSS Code for event container */
 	.event-container {
