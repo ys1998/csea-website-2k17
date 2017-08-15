@@ -2264,6 +2264,7 @@ table.default thead {
 		display: inline-block;
 		box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.3);
 		background-color: #dddddd;
+		margin: 8px;
 	}
 	.flip_image_container img{
 		width:200px;
