@@ -1932,6 +1932,54 @@ table.default thead {
 		color: #C1CAC5;
 	}
 
+	/* Header Home */
+	
+	#header-home {
+		text-align: center;
+		font-size: 2em;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 5em 0 1em 0;
+		margin: 0 auto;
+	}
+	#header-home .logo {
+		position: relative;
+		text-align: center;
+		/*border-top: solid 5px #e7eae8;*/
+	}
+
+	#header-home .logo div {
+		background: none;
+		position: relative;
+		display: inline-block;
+		padding: 0 1.5em 1.5em 1.5em;
+		top: -0.65em;
+	}
+
+	#header-home .logo h1 {
+		display: inline;
+		color: #74e565;
+		text-shadow: 2px 2px rgba(0,0,0,0.5);
+	}
+
+	#header-home .logo p {
+		text-transform: none;
+		font-weight: normal;
+		display: inline;
+		color: #fff;
+		text-shadow: 1px 1px rgba(0,0,0,0.5);
+	}
+	#header-home .logo h2 {
+		display: inline;
+		text-transform: none;
+		font-weight: normal;
+		font-family: 'Lobster', sans-serif;
+		font-size: 1.5em;
+		color: #74e565;
+		text-shadow: 1px 1px rgba(0,0,0,0.5);
+	}
+
 	/* CSEA Header */
 	#csea {
 		position: fixed;
@@ -1953,7 +2001,12 @@ table.default thead {
 		display: inline-block;
 		padding: 0px 5px 0px 5px;
 	}
-
+	.intro-image {
+		background: url("images/homepage.jpg");
+		background-attachment: fixed;
+		background-position: top center;
+		background-size: cover;
+	}
 
 	/* CSS code for slide-show container and its containees */
 	.slideshow-container {
@@ -2166,8 +2219,8 @@ table.default thead {
 	}
 	.event-container:hover {
 		transition: all 0.15s ease-in-out;
-		box-shadow: 0em 0em 4em rgba(0,0,0,0.3);
-		border: solid 5px #74e565;
+		box-shadow: 0em 0em 4em #74e565/*rgba(0,0,0,0.3)*/;
+		border: solid 3px #74e565;
 	}
 	.event-container table {
 		width: 60%;
@@ -2309,8 +2362,7 @@ table.default thead {
 		top: 0;
 		left: 0;
 		z-index: 1000;
-		background-color: rgba(255, 255, 255, 0.95);
-		background-image: url("images/overlay.png");
+		background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(80,80,80,1));
 		width: 100%;
 		height: 3.50em;
 		line-height: 3.25em;
@@ -2319,8 +2371,8 @@ table.default thead {
 		font-weight: 700;
 		text-transform: uppercase;
 		cursor: default;
-		box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.3);
-		border-bottom: solid 5px #99bf94;
+		box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.7);
+		/*border-bottom: solid 5px #99bf94;*/
 	}
 
 	#nav ul {
@@ -2407,6 +2459,19 @@ table.default thead {
 		background: #0f5dbf;
 		border-radius: 9px;
 	}
+	#nav li.login-current a {
+		top:0px;
+		background: #147afb;
+		color: #fff;
+		border-radius: 0px;
+		border-bottom-left-radius: 9px;
+		border-bottom-right-radius: 9px;
+	}
+	#nav li.login-current:hover a {
+		top:0;
+		background: #0f5dbf;
+		border-radius: 9px;
+	}
 
 	.dropotron {
 		background: rgba(0,0,0,0.75);
@@ -2434,6 +2499,7 @@ table.default thead {
 	.dropotron li:hover > a, .dropotron li:hover > span {
 		color: #fff;
 		background: rgba(255,255,255,0.2);
+		border-radius: 6px;
 	}
 
 	.dropotron li.active > a, .dropotron li.active > span {

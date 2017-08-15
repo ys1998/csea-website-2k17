@@ -2,12 +2,13 @@
 <html>
 <head>
 	<script src="assets/js/jquery-1.8.3.min.js"></script>
-    <script src="assets/js/animatescroll.js"></script>
+	<script src="assets/js/animatescroll.js"></script>
 	<title>CSEA | IIT Bombay</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
 <body class="homepage">
@@ -50,162 +51,164 @@
 
 		<!-- Updates side link -->
 		<div style="position: fixed;
-					bottom: 0.5em;
-					right: 0.5em;
-					z-index: 10000;
-					"">
-					<a href="#updates" class="button alt" style="box-shadow: 0em 0em 1em rgba(0,0,0,0.3);">Updates</a>
-		</div>
+		bottom: 0.5em;
+		right: 0.5em;
+		z-index: 8;
+		"">
+		<a href="#updates" class="button alt" style="box-shadow: 0em 0em 1em rgba(0,0,0,0.3);">Updates</a>
+	</div>
 
-		<!-- Header -->
-		<header id="header">
-			<div class="logo container">
-				<div>
-					<p>Welcome to the official website of </p>
-					<h1><a href="index.html" id="logo">CSEA, IIT Bombay</a></h1>
+	<!-- Blur effect -->
+	<div style="filter: blur(10px); background: linear-gradient(to top left, rgba(0,0,0,0.5),rgba(0,200,50,0.5)),url('assets/css/images/homepage.jpg'); background-position: center center; background-size: cover; background-attachment: fixed; position:absolute; top: 0; bottom: 0; left: 0; right: 0;"></div>
+	<!-- Header -->
+	<div id="header-home">
+		<div class="logo container">
+			<p>WELCOME TO THE OFFICIAL WEBSITE OF </p>
+			<h1><a href="index.html" id="logo">CSEA, IIT BOMBAY</a></h1>
+		</div>
+		<!--- IITB logo and CSEA logo -->
+		<div id="logo container" style="position: relative; text-align: center; padding-top: 2em; padding-bottom: 2.5em;">
+			<img src="images/iitb_logo.png" height="150px" style="margin: 0px 15px; border-radius: 9px;"/>
+			<img src="images/csea_logo.jpg" height="150px" style="margin: 0px 15px; border-radius: 9px; box-shadow: 0 0 0.5em rgba(0,0,0,0.7);"/>
+		</div>
+		<div class="logo container" style="font-family: 'Lobster', sans-serif;">
+			<h2>We are the ones who make CSE at IIT-B cool.</h2><br>
+			<p>Atleast we put forward the initiatives.</p>
+		</div>
+	</div>
+	
+
+	
+
+	<!-- Main -->
+	<div id="main-wrapper">
+		<div id="main" class="container">
+			<div class="row 200%">
+				<div class="12u">
+
+					<!-- Highlight -->
+					<section class="box highlight">
+						<p><br>
+							If you were thinking that CSE at IIT-B would be the standard boring-sort-of stuff, then you have been harboring lies.<br />
+							Yeah, you read it right.<br />
+							We interact. We sing. We dance. We devour. We play. We gather. We travel.
+						</p>
+						<h3>And most importantly, WE ENJOY.</h3>
+						<p>	CSEA's here to ensure just that.</p>
+					</section>
 				</div>
 			</div>
-		</header>
-
-		<!--- IITB logo and CSEA logo -->
-		<div id="logo container" style="text-align: center; background-color: #ffffff;">
-			<img src="images/iitb_logo.png" align="center" height="150px" style="margin: 0px 15px; border-radius: 9px;"/>
-			<img src="images/csea_logo.jpg" align="center" height="150px" style="margin: 0px 15px; border-radius: 9px;"/>
-		</div>
-
-		<!-- Main -->
-		<div id="main-wrapper">
-			<div id="main" class="container">
-				<div class="row 200%">
-					<div class="12u">
-
-						<!-- Highlight -->
-						<section class="box highlight">
-							<header>
-								<h2>We are the ones who make CSE at IIT-B cool.</h2>
-								<p>Atleast we put forward the initiatives.</p>
-							</header>
-							<p>
-								If you were thinking that CSE at IIT-B would be the standard boring-sort-of stuff, then you have been harboring lies.<br />
-								Yeah, you read it right.<br />
-								We interact. We sing. We dance. We devour. We play. We gather. We travel.
-							</p>
-							<h3>And most importantly, WE ENJOY.</h3>
-							<p>	CSEA's here to ensure just that.</p>
-						</section>
-					</div>
-				</div>
 
 
 
-				<div class="row 200%">
-					<div class="12u"  id="updates">
+			<div class="row 200%">
+				<div class="12u"  id="updates">
 
-						<!-- Blog -->
-						<section class="box blog">
-							<h2 class="major"><span><  Updates  ></span></h2>
-							<div>
-								<div class="row">
-									<div class="8u 12u(mobile)">
-										<div class="content content-left">
+					<!-- Blog -->
+					<section class="box blog">
+						<h2 class="major"><span><  Updates  ></span></h2>
+						<div>
+							<div class="row">
+								<div class="8u 12u(mobile)">
+									<div class="content content-left">
 
-											<!-- Featured Post -->
-											<article class="box post">
-												<header>
-													<h3><a href="#">Major Upcoming Event</a></h3>
-													<p>Name of the event</p>
-													<ul class="meta">
-														<li class="icon fa-calendar">Date, Day</li>
-														<li class="icon fa-clock-o">Time</li>
-														<li class="icon fa-map-marker">Venue</li>
-														<p>
-															Brief description of the event.
-														</p>
-													</ul>
-												</header>
-												<div style="text-align: right;">
-													<a class="image featured"><img src="images/major_event.jpg"></a>
-													<a href="events.html" class="button">Learn more</a>
-												</div>
-											</article>
-
-										</div>
-									</div>
-									<div class="4u 12u(mobile)">
-										<div class="sidebar" style="text-align: left">
-
-											<!-- Archives -->
-											<ul class="divided">
-												<li>
-													<article class="box post-summary">
-														<h3><a href="#">First post</a></h3>
-														<ul class="meta">
-															<li class="icon fa-clock-o">Time</li>
-															<li class="icon fa-user">Author</li>
-														</ul>
-													</article>
-												</li>
-												<li>
-													<article class="box post-summary">
-														<h3><a href="#">Second post</a></h3>
-														<ul class="meta">
-															<li class="icon fa-clock-o">Time</li>
-															<li class="icon fa-user">Author</li>
-														</ul>
-													</article>
-												</li>
-												<li>
-													<article class="box post-summary">
-														<h3><a href="#">Third post</a></h3>
-														<ul class="meta">
-															<li class="icon fa-clock-o">Time</li>
-															<li class="icon fa-user">Author</li>
-														</ul>
-													</article>
-												</li>
-												<li>
-													<article class="box post-summary">
-														<h3><a href="#">Fourth post</a></h3>
-														<ul class="meta">
-															<li class="icon fa-clock-o">Time</li>
-															<li class="icon fa-user">Author</li>
-														</ul>
-													</article>
-												</li>
-												<li>
-													<article class="box post-summary">
-														<h3><a href="#">Fifth post</a></h3>
-														<ul class="meta">
-															<li class="icon fa-clock-o">Time</li>
-															<li class="icon fa-user">Author</li>
-														</ul>
-													</article>
-												</li>
-											</ul>
-											<div style="text-align: left;">
-												<a href="posts.html" class="button" >Browse Archives</a>
+										<!-- Featured Post -->
+										<article class="box post">
+											<header>
+												<h3><a href="#">Major Upcoming Event</a></h3>
+												<p>Name of the event</p>
+												<ul class="meta">
+													<li class="icon fa-calendar">Date, Day</li>
+													<li class="icon fa-clock-o">Time</li>
+													<li class="icon fa-map-marker">Venue</li>
+													<p>
+														Brief description of the event.
+													</p>
+												</ul>
+											</header>
+											<div style="text-align: right;">
+												<a class="image featured"><img src="images/major_event.jpg"></a>
+												<a href="events.html" class="button">Learn more</a>
 											</div>
+										</article>
 
+									</div>
+								</div>
+								<div class="4u 12u(mobile)">
+									<div class="sidebar" style="text-align: left">
+
+										<!-- Archives -->
+										<ul class="divided">
+											<li>
+												<article class="box post-summary">
+													<h3><a href="#">First post</a></h3>
+													<ul class="meta">
+														<li class="icon fa-clock-o">Time</li>
+														<li class="icon fa-user">Author</li>
+													</ul>
+												</article>
+											</li>
+											<li>
+												<article class="box post-summary">
+													<h3><a href="#">Second post</a></h3>
+													<ul class="meta">
+														<li class="icon fa-clock-o">Time</li>
+														<li class="icon fa-user">Author</li>
+													</ul>
+												</article>
+											</li>
+											<li>
+												<article class="box post-summary">
+													<h3><a href="#">Third post</a></h3>
+													<ul class="meta">
+														<li class="icon fa-clock-o">Time</li>
+														<li class="icon fa-user">Author</li>
+													</ul>
+												</article>
+											</li>
+											<li>
+												<article class="box post-summary">
+													<h3><a href="#">Fourth post</a></h3>
+													<ul class="meta">
+														<li class="icon fa-clock-o">Time</li>
+														<li class="icon fa-user">Author</li>
+													</ul>
+												</article>
+											</li>
+											<li>
+												<article class="box post-summary">
+													<h3><a href="#">Fifth post</a></h3>
+													<ul class="meta">
+														<li class="icon fa-clock-o">Time</li>
+														<li class="icon fa-user">Author</li>
+													</ul>
+												</article>
+											</li>
+										</ul>
+										<div style="text-align: left;">
+											<a href="posts.html" class="button" >Browse Archives</a>
 										</div>
+
 									</div>
 								</div>
 							</div>
-						</section>
+						</div>
+					</section>
 
-					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<!-- Footer -->
-		<footer id="footer" class="container">
-			<div class="row 200%">
-				<div class="6u">
+	<!-- Footer -->
+	<footer id="footer" class="container">
+		<div class="row 200%">
+			<div class="6u">
 
-					<!-- Feedback -->
-					<section>
-						<h2 class="major"><span>Feedback</span></h2>
-						<form id="form" method="post" action="">
+				<!-- Feedback -->
+				<section>
+					<h2 class="major"><span>Feedback</span></h2>
+					<form id="form" method="post" action="">
 						<table>
 							<tr><td colspan="2"><input type="text" placeholder="Name" /></td></tr>
 							<tr><td colspan="2"><input type="text" placeholder="E-mail" /></td></tr>
@@ -215,14 +218,14 @@
 									<a onclick="form.submit()" class="button alt">Send </a><br />
 									<div style="height: 10px; width: auto;"></div>
 									<a onclick="form.reset()" class="button alt">Reset</a></td>
-							</tr>
-						</table>
+								</tr>
+							</table>
 						</form>
 						
 					</section>
 				</div>
 
-					<!-- Contact -->
+				<!-- Contact -->
 				<div class="6u" style="vertical-align: middle;">
 					<section>
 						<h2 class="major"><span>Get in touch</span></h2>
@@ -234,11 +237,11 @@
 					<section>
 						<h2 class="major"><span>Useful links</span></h2>
 						<div style="text-align: left; display: inline-block;">
-						<ul style="list-style-type:square;">
-							<li><a href="https://www.cse.iitb.ac.in">CSE, IIT Bombay</a></li>
-							<li><a href="https://www.cse.iitb.ac.in/infoczar/doku.php">Department Wiki</a></li>
-							<li><a href="#">Link 3</a></li>
-						</ul>
+							<ul style="list-style-type:square;">
+								<li><a href="https://www.cse.iitb.ac.in">CSE, IIT Bombay</a></li>
+								<li><a href="https://www.cse.iitb.ac.in/infoczar/doku.php">Department Wiki</a></li>
+								<li><a href="#">Link 3</a></li>
+							</ul>
 						</div>
 					</section>
 
